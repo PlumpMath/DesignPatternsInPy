@@ -1,7 +1,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # #
-#		Design Pattern: Singleton               #
+#		Design Pattern: Singleton       #
 # singleton is a design pattern where only one  #
-#	instance may exist at any given time        #
+#	instance may exist at any given time    #
 # # # # # # # # # # # # # # # # # # # # # # # # #	
 
 # Refer here to for more information
@@ -69,6 +69,6 @@ class MyClass(BaseClass):
     __metaclass__ = Singleton
 
 #Python3
-#class MyClass(BaseClass, metaclass=Singleton):
-#    pass
+class MyClass(BaseClass, metaclass=Singleton):
+    pass
 
