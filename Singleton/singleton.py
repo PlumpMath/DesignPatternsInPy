@@ -1,7 +1,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # #
-#		Design Pattern: Singleton       		#
+#		Design Pattern: Singleton       #
 # singleton is a design pattern where only one  #
-#	instance may exist at any given time    	#
+#	instance may exist at any given time    #
 # # # # # # # # # # # # # # # # # # # # # # # # #	
 
 # Refer here to for more information
@@ -51,7 +51,7 @@ class MyClass(object):
 #    pass
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-#	Final Challenges by Youtube Channel Trevor Payne 	#
+#     Final Challenges by Youtube Channel Trevor Payne	#
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 ## 	Create a singleton that has a function which returns a value that increase +1 everytime it is called (E.X. Returns 1,2,3,4,5)
