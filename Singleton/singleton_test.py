@@ -33,7 +33,7 @@ class TestSingleton():
 		assert x.value == y.value
 
 	def test_challengeOne(self):
-		instanceList = [ChallengeOne() for i in xrange(5)]
+		instanceList = [ChallengeOne() for i in range(5)]
 		count = 1
 		for i in instanceList:
 			print ("%s: %s" % (i.__class__.__name__, i.update()))
