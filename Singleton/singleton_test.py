@@ -5,6 +5,8 @@ from __future__ import print_function
 
 from singleton import *
 
+import sys
+
 class TestSingleton():
 	def test_example1(self):
 		print ("Singleton Example1")
@@ -33,7 +35,11 @@ class TestSingleton():
 		assert x.value == y.value
 
 	def test_challengeOne(self):
-		instanceList = [ChallengeOne() for i in range(5)]
+		instance = None
+		if sys.version_info < (3,0):
+			instanceList = [ChallengeOne() for i in range(5)]
+		else:
+			instanceList = [ChallengeOnePy3() for i in range(5)]
 		count = 1
 		for i in instanceList:
 			print ("%s: %s" % (i.__class__.__name__, i.update()))
@@ -43,7 +49,11 @@ class TestSingleton():
 		print ("end of challengeOne")
 
 	def test_challengeTwo(self):
-		instance = ChallengeTwo()
+		instance = None
+		if sys.version_info < (3,0):
+			instance = ChallengeTwo()
+		else:
+			instance = ChallengeTwoPy3()
 		assert instance is not None
 
 		nameTest = "Jacob"

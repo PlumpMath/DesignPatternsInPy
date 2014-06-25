@@ -76,11 +76,34 @@ class ChallengeOne():
         self.count += 1
         return self.count
 
+class ChallengeOnePy3(metaclass=Singleton):
+    def __init__(self):
+        print (self.__class__.__name__ + " Instantiated")
+        self.count = 0
+
+    def update(self):
+        self.count += 1
+        return self.count
+
 
 ## Create a singleton that acts like a phonebook. It has a function that you can pass in a Name and a Number to store,
 ## 	and another function to retrieve a Number and a Given Name
 class ChallengeTwo():
     __metaclass__ = Singleton
+
+    def __init__(self):
+        self.name = ''
+        self.number = 0
+        print (self.__class__.__name__ + " Instantiated")
+
+    def updatePhoneBook(self, name, number):
+        self.name = name
+        self.number = number
+
+    def getPhoneBook(self):
+        return self.name, self.number
+
+class ChallengeTwoPy3(metaclass=Singleton):
 
     def __init__(self):
         self.name = ''
