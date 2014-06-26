@@ -1,3 +1,6 @@
+## More information
+## http://pytest.org/latest/example/pythoncollection.html
+
 # Content of conftest.py
 import sys
 
